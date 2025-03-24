@@ -1,15 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Portfólio Digital</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <img src="images/imagem.jpeg" alt="Imagem do Portfólio" class="portfolio-img">
-        <h1>Meu Portfólio Pessoal</h1>
+    <div id="main-container">
+        <nav>
+            <div class="logo">V<span>G</span></div>
+            <ul>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <header>
+                <h1>Desenvolvedor de Software</h1>
+            </header>
+
+            <section id="about">
+                <img src="./images/imagem.jpeg" alt="Foto de Vitor">
+                <h2>Sobre Mim</h2>
+                <p>Olá! Meu nome é <strong>Vitor</strong>, tenho 21 anos e estou cursando o último semestre de
+                    <strong>Desenvolvimento de Software Multiplataforma</strong> na <strong>Fatec de São José dos
+                        Campos</strong>. Sou apaixonado por tecnologia e programação, sempre buscando criar soluções
+                    criativas e eficientes para desafios do dia a dia.</p>
+
+                <p>Além dos estudos, gosto de equilibrar minha rotina com hobbies que me inspiram e estimulam minha
+                    criatividade: jogar videogame e tocar guitarra. Essas atividades me ajudam a manter o foco, explorar
+                    novas ideias e encontrar inspiração para meus projetos.</p>
+
+                <p>Estou sempre aberto a aprender novas tecnologias e colaborar em projetos inovadores que possam causar
+                    um impacto positivo</p>
+            </section>
+
+            <section id="projects">
+                <h2>Projetos</h2>
+
+                <!-- SpiceBank Project -->
+                <div class="project">
+                    <h3>SpiceBank - Aplicativo Bancário (1º Semestre)</h3>
+                    <div class="project-content">
+                        <!-- Exibe o GIF -->
+                        <img src="./images/spicebank-demo.gif" alt="Demonstração do Projeto SpiceBank">
+
+                        <!-- Descrição do Projeto -->
+                        <div class="project-description">
+                            <p>O SpiceBank é um sistema bancário digital desenvolvido com uma arquitetura sólida
+                                utilizando <strong>Python</strong>, <strong>Flask</strong> e <strong>MariaDB</strong>. O
+                                projeto oferece funcionalidades como criação de contas, transferência de fundos e
+                                histórico de transações. Seu objetivo é fornecer uma solução eficiente e intuitiva para
+                                gerenciamento financeiro pessoal e corporativo.</p>
+                            <a href="https://github.com/https-github-com-spicecorpdev/spicebank" target="_blank">Ver
+                                Detalhes do Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outro Projeto -->
+                <div class="project">
+                    <h3>Projeto (2º Semestre)</h3>
+                    <p>Descrição disponivel em breve!</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+
+                <!-- Outro Projeto -->
+                <div class="project">
+                    <h3>Projeto (3º Semestre)</h3>
+                    <p>Descrição disponivel em breve!</p>
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contato</h2>
+                <div class="social-links">
+                    <!-- Ícone de Email -->
+                    <a href="mailto:vitaoog@gmail.com" target="_blank">
+                        <img src="./images/email-icon.svg" alt="Email">
+                    </a>
+
+                    <!-- Ícone do LinkedIn -->
+                    <a href="https://www.linkedin.com/in/vitorgarcezdeoliveira/" target="_blank">
+                        <img src="./images/linkedin-icon.svg" alt="LinkedIn">
+                    </a>
+
+                    <!-- Ícone do GitHub -->
+                    <a href="https://github.com/Vitaog" target="_blank">
+                        <img src="./images/github-icon.svg" alt="GitHub">
+                    </a>
+                </div>
+            </section>
+
+        </div>
+
+        <footer>
+            © 2025 Vitor. Todos os direitos reservados.
+        </footer>
     </div>
+
+    <script src="./scripts/script.js"></script>
 </body>
+
 </html>
