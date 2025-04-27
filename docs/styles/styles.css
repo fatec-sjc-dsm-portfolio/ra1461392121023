@@ -192,3 +192,7 @@ footer {
 .project-description {
     max-width: 60%;
 }
+
+.project-description p {
+    margin-bottom: 15px;
+}
