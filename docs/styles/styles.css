@@ -68,8 +68,19 @@ nav ul li a:hover {
     transform: scale(1.1);
 }
 
-.scrolled {
-    background-color: rgba(0, 102, 204, 1);
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    border-radius: 2px;
 }
 
 .content {
@@ -88,7 +99,8 @@ nav ul li a:hover {
     align-items: center;
 }
 
-#about h2, #about p {
+#about h2,
+#about p {
     text-align: justify;
     width: 100%;
 }
@@ -197,41 +209,33 @@ footer {
     margin-bottom: 15px;
 }
 
-/* Responsivo */
-
+/* ======= RESPONSIVIDADE ======= */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
+        align-items: flex-start;
         height: auto;
-        padding: 10px;
-        gap: 10px;
+        padding: 10px 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
     }
 
     nav ul {
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 10px;
+        display: none;
     }
 
-    .logo {
-        font-size: 1.5rem;
-    }
-
-    .logo span {
-        font-size: 1.6rem;
+    nav ul.show {
+        display: flex;
     }
 
     .content {
         padding: 20px;
-    }
-
-    img {
-        width: 200px;
-        height: 200px;
-    }
-
-    header h1 {
-        font-size: 2rem;
     }
 
     .project-content {
@@ -242,11 +246,24 @@ footer {
     .project-content img {
         width: 100%;
         max-width: 100%;
+        height: auto;
     }
 
     .project-description {
         max-width: 100%;
         text-align: justify;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .logo span {
+        font-size: 1.7rem;
     }
 
     .social-links {
@@ -257,5 +274,14 @@ footer {
     .social-links a img {
         width: 60px;
         height: 60px;
+    }
+
+    img {
+        display: block;
+        margin: 0 auto 20px auto;
+        max-width: 90%;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
     }
 }
