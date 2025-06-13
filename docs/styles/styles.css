@@ -209,6 +209,13 @@ footer {
     margin-bottom: 15px;
 }
 
+.project-content img.cloudspark-gif {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* ======= RESPONSIVIDADE ======= */
 @media (max-width: 768px) {
     nav {
@@ -284,4 +291,8 @@ footer {
         border-radius: 50%;
         object-fit: cover;
     }
+
+    .project-content img.cloudspark-gif {
+    width: 250px;
+  }
 }
